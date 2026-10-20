@@ -7,9 +7,8 @@ public class FullNameParser {
         Scanner scanner = new Scanner(System.in);
 
         // Full name of user
-        String fullName = "Adrian Christopher Lewis";
-        /*System.out.print("Enter your full name: ");
-        String fullName = scanner.nextLine().trim();*/
+        System.out.print("Enter your full name: ");
+        String fullName = scanner.nextLine().trim();
 
         int firstSpace = fullName.indexOf(" ");
         int lastSpace = fullName.lastIndexOf(" ");
@@ -19,8 +18,7 @@ public class FullNameParser {
 
         if(middleName.isEmpty()){
             middleName = "(none)";
-        } else {
-            middleName = fullName.substring();
+        }
 
         System.out.println(firstName);
         System.out.println(middleName);
