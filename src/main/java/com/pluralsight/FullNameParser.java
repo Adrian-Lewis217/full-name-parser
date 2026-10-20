@@ -11,10 +11,10 @@ public class FullNameParser {
         /*System.out.print("Enter your full name: ");
         String fullName = scanner.nextLine().trim();*/
 
-        String firstName = fullName.indexOf(" ");
+        int firstSpace = fullName.indexOf(" ");
         String middleName;
         String lastName;
-        String firstSpace = fullName.indexOf(" ");
+        String firstName = fullName.substring(0, firstSpace);
 
         if(middleName.isEmpty()){
             middleName = "(none)";
