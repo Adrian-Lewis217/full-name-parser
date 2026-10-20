@@ -12,15 +12,20 @@ public class FullNameParser {
         String fullName = scanner.nextLine().trim();*/
 
         int firstSpace = fullName.indexOf(" ");
-        String middleName;
-        String lastName;
+        int lastSpace = fullName.lastIndexOf(" ");
         String firstName = fullName.substring(0, firstSpace);
+        String middleName = fullName.substring(firstSpace, lastSpace);
+        String lastName = fullName.substring(lastSpace);
 
         if(middleName.isEmpty()){
             middleName = "(none)";
         } else {
             middleName = fullName.substring();
-    }
+
+        System.out.println(firstName);
+        System.out.println(middleName);
+        System.out.println(lastName);
+
 
     }
 }
